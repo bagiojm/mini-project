@@ -10,4 +10,10 @@ second hault penalty from others.
 
 Project focusses on the core concepts of Networking,Concurrency in programming.We have used UDP as our networking protocol.
 Project uses server-client as its networking model in which server hosts a network,to which all the clients join and play the game.
+
+----WORKING----
+
+Basically the server maintains a simple array containing x and y cords of 4 players.Whenever a player(client) makes a move by arrow keys hes going to send a request to server to move to a specific destiation,server then accepts the request and updates the current position array and sends the array to all the clients who are connected with the server.Clients maintains 2 threads to  send requests and recieve updates.Server will always be listening to connected clients and also plays as a client in the game.
+Network should be hosted by player who will become the server.
 Project was done inspired from the well known android app MiniMilitia.The project is still in its testing phase.
+
